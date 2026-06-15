@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" 
+         version="3.1">
+         
+    <display-name>CarShopApp</display-name>
+
+    <servlet>
+        <servlet-name>CarServlet</servlet-name>
+        <servlet-class>com.WEB.CarServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>CarServlet</servlet-name>
+        <url-pattern>/listCar</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CarServlet</servlet-name>
+        <url-pattern>/newCar</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CarServlet</servlet-name>
+        <url-pattern>/insertCar</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CarServlet</servlet-name>
+        <url-pattern>/deleteCar</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CarServlet</servlet-name>
+        <url-pattern>/editCar</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CarServlet</servlet-name>
+        <url-pattern>/updateCar</url-pattern>
+    </servlet-mapping>
+
+    <welcome-file-list>
+        <welcome-file>carIndex.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
